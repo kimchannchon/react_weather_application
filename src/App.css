@@ -1,38 +1,97 @@
-.App {
+body {
+  background: rgb(240,240,240);
+  background: radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(123,123,123,1) 100%);
   text-align: center;
+  color: rgb(30, 30, 30);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  background: rgb(31,31,31);
+  background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(206,206,206,0) 100%); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+input {
+  border-radius: 5px;
+  outline: none;
+  border: rgb(200, 33, 0) solid 2px;
+  padding: 10px;
+  margin: 10vh 0.5vh;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+}
+
+button {
+  border-radius: 5px;
+  outline: none;
+  border: rgb(200, 33, 0) solid 2px;
+  padding: 10px;
+  margin: 10vh 0.5vh;
+  font-weight: 500;
+  color: rgb(225, 225, 225);
+  background: rgb(200, 33, 0);
+}
+
+.header-div {
+  background-color: rgba(220, 220, 220, 0);
+  margin: 1vh 10vh;
+  padding-top: 1vh;
+  border-radius: 5px;
+}
+
+.header-div div {
+  background-color: rgb(220, 220, 220);
+  margin-top: 1vh;
+  padding: 1vh;
+  border-radius: 10px;
+}
+
+.data img {
+  background: rgb(48, 48, 48);
+  border-radius: 50%;
+  padding: 1.8vh;
+  margin-top: -6vh;
+}
+
+.weather-description h3 {
+  color: rgb(39, 39, 39);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.weather-description p {
+  color: rgb(200, 33, 0);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 32px;
+  margin-top: 2vh;
+}
+
+.location {
+  color: rgb(200, 33, 0);
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 6vh;
+}
+
+@media screen and (min-width:768px) {
+  .weather-description {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0 50px 0;
+    text-align: center;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header-div {
+    margin: 20px 90px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section {
+    text-align: center;
   }
 }
